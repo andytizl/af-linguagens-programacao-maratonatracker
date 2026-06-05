@@ -1,0 +1,8 @@
+/*
+AF - Avaliação Final - Linguagens de Programação
+Tema do Projeto: Maratona Tracker
+Aluno 1: Andressa Tizl Americo - RA: 252295
+Aluno 2: Isabela Reis Alves - RA: 252222
+Professor: Abimael de Oliveira
+Data de entrega: 07/06
+*/
