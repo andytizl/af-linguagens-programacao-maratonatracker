@@ -46,22 +46,74 @@ Data de entrega: 07/06
     <!-- Conteúdo principal -->
     <main style="padding-top: 70px;">
 
-    <main class="conteudo-home">
-        <section class="hero-banner">
-            <h2>As melhores indicações para sua próxima maratona!</h2>
-            <p>Descubra aqui os filmes mais aclamados do momento!</p>
-        </section>
+    <!-- CARROSSEL -->
+        <section class="hero">
+            <div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
+                
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="4"></button>
+                </div>
 
-        <section class="mais-famosos">
-            <h2>Em Alta</h2>
-            <div class="grid-filmes">
-                <div class="card-filme">Poster 1</div>
-                <div class="card-filme">Poster 2</div>
-                <div class="card-filme">Poster 3</div>
-                <div class="card-filme">Poster 4</div>
+                <div class="carousel-inner">
+                    <!-- Filme 1 -->
+                    <div class="carousel-item active bg-black">
+                        <img src="./img/banner-backrooms.jpeg" class="d-block mx-auto" style="height: 500px; object-fit: contain;" alt="Pôster do Filme 1">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+                            <h2>Backrooms - Um Não-Lugar</h2>
+                            <p>Novidade no cinema, baseado na popular creepypasta</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Filme 2 -->
+                    <div class="carousel-item bg-black">
+                        <img src="./img/banner-hailmary.JPG" class="d-block mx-auto" style="height: 500px; object-fit: contain;" alt="Pôster do Filme 2">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+                            <h2>Hail Mary - Devoradores de Estrelas</h2>
+                            <p>Filme sucesso de bilheteria, em que um astronauta tenta salvar a Terra estando sozinho no espaço sideral.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Filme 3 -->
+                    <div class="carousel-item bg-black">
+                        <img src="./img/banner-michael.jpeg" class="d-block mx-auto" style="height: 500px; object-fit: contain;" alt="Pôster do Filme 3">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+                            <h2>Michael</h2>
+                            <p>A história do "Rei do Pop" Michael Jackson</p>
+                        </div>
+                    </div>
+
+                    <!-- Filme 4 -->
+                    <div class="carousel-item bg-black">
+                        <img src="./img/banner-thedrama.jpeg" class="d-block mx-auto" style="height: 500px; object-fit: contain;" alt="Pôster do Filme 4">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+                            <h2>The Drama</h2>
+                            <p>Estrelado por Zendaya e Robert Pattinson, os planos de um casamento perfeito são colocados em risco após uma descoberta desastrosa dias antes da cerimônia.</p>
+                        </div>
+                    </div>
+
+                    <!-- Filme 5 -->
+                    <div class="carousel-item bg-black">
+                        <img src="./img/banner-wutheringheigths.jpeg" class="d-block mx-auto" style="height: 500px; object-fit: contain;" alt="Pôster do Filme 5">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+                            <h2>Wuthering Heights</h2>
+                            <p>Releitura do romance clássico de Emily Brontë, onde nos é apresentada a história de amor e ódio obsessivo entre Heathcliff e Catherine.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botões de Voltar e Avançar -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
         </section>
-    </main>
 
 <footer class="rodape">
     <div class="container">
