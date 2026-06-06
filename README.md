@@ -35,4 +35,4 @@ Catálogo e rastreador das melhores e mais recentes filmes. O site atua como um 
   - Botão "Voltar ao Topo" dinâmico ao rolar a página
 
 ## Link do Repositório
-https://github.com/andytizl/MaratonaTracker
+https://github.com/andytizl/af-linguagens-programacao-maratonatracker
