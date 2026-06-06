@@ -276,3 +276,64 @@ a {
     height: 400px;
     object-fit: cover;
 }
+
+/* PÁGINA DE CONTATO */
+
+.form-control, .form-select {
+    background-color: #222;
+    border: 1px solid var(--cor-borda);
+    color: #fff;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #2a2a2a;
+    border-color: var(--cor-destaque);
+    color: #fff;
+    box-shadow: 0 0 0 0.25rem rgba(0, 255, 68, 0.25);
+}
+
+.form-control::placeholder {
+    color: #777;
+}
+
+.redes-sociais a {
+    color: var(--cor-destaque);
+    font-weight: 500;
+}
+
+.redes-sociais a:hover {
+    color: #fff;
+}
+
+/* javascript */
+
+.btn-topo {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: none; /* Fica escondido por padrão */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--cor-destaque);
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.btn-topo:hover {
+    background-color: #00cc36;
+}
+
+.btn-topo.mostrar {
+    display: block;
+}
+
+.card-destaque-js {
+    border-color: var(--cor-destaque) !important;
+}
