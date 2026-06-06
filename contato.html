@@ -6,6 +6,7 @@ Aluno 2: Isabela Reis Alves - RA: 252222
 Professor: Abimael de Oliveira
 Data de entrega: 07/06
 -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -13,7 +14,7 @@ Data de entrega: 07/06
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maratona Tracker - Home</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -46,8 +47,89 @@ Data de entrega: 07/06
     <main style="padding-top: 80px;">
 
     <!-- Conteúdo contato -->
+    <main style="padding-top: 70px;">
+        <section class="container my-5 apresentacao">
+            <h2 class="text-center mb-3">Fale Conosco</h2>
+            <p class="text-center lead text-secondary mb-5">
+                Tem alguma dúvida, encontrou um problema técnico ou quer sugerir um novo lançamento? Preencha o formulário abaixo e nossa equipe entrará em contato.
+            </p>
 
+            <div class="row g-5">
+                
+                <div class="col-lg-6">
+                    <div class="p-4 rounded border border-secondary bg-dark text-light h-100">
+                        <form id="formContato" action="#" method="post">
+                            
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome completo:</label>
+                                <input type="text" id="nome" name="nome" class="form-control" required pattern="[A-Za-zÀ-ÿ\s]{3,}" title="Digite pelo menos 3 letras">
+                            </div>
 
+                            <div class="mb-3">
+                                <label for="email" class="form-label">E-mail:</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label">Telefone (Opcional):</label>
+                                <input type="tel" id="telefone" name="telefone" class="form-control" placeholder="(00) 00000-0000" pattern="[0-9()-\s]{10,15}">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="assunto" class="form-label">Assunto:</label>
+                                <select id="assunto" name="assunto" class="form-select" required>
+                                    <option value="">Selecione uma opção</option>
+                                    <option value="sugestao">Sugestão de Filme/Série</option>
+                                    <option value="suporte">Suporte Técnico</option>
+                                    <option value="parceria">Parceria</option>
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="mensagem" class="form-label">Mensagem:</label>
+                                <textarea id="mensagem" name="mensagem" class="form-control" rows="5" required></textarea>
+                            </div>
+
+                            <div class="d-flex gap-3">
+                                <button type="submit" class="botao-destaque flex-grow-1 border-0">Enviar Mensagem</button>
+                                <button type="reset" class="botao-secundario flex-grow-1">Limpar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 d-flex flex-column gap-4">
+                    
+                    <div class="p-4 rounded border border-secondary bg-dark text-light">
+                        <h3 class="h5 mb-3 text-success">Nossa Sede:</h3>
+                        <p class="mb-2">📍 Avenida do Cinema, 1000 - São Paulo, SP</p>
+                        <p class="mb-2">📧 contato@maratonatracker.com.br</p>
+                        <p class="mb-4">📱 (11) 98765-4321</p>
+                        
+                        <h3 class="h6 mb-2">Redes Sociais:</h3>
+                        <div class="redes-sociais">
+                            <a href="#">Instagram</a> | 
+                            <a href="#">Twitter</a> | 
+                            <a href="#">Letterboxd</a>
+                        </div>
+                    </div>
+
+                    <div class="rounded overflow-hidden border border-secondary flex-grow-1" style="min-height: 300px;">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0988673739343!2d-46.66311808447551!3d-23.56488346761005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1680000000000!5m2!1spt-BR!2sbr" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- fim conteúdo contato -->
 
